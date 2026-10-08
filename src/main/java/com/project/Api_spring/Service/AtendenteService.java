@@ -28,7 +28,6 @@ public class AtendenteService {
 
     public Atendente atualizar(Long id, Atendente atendenteAtualizado) {
         Atendente atendente = buscarPorId(id);
-        atendente.setNome(atendenteAtualizado.getNome());
         atendente.setEmail(atendenteAtualizado.getEmail());
         atendente.setPassword(atendenteAtualizado.getPassword());
         return atendenteRepository.save(atendente);
