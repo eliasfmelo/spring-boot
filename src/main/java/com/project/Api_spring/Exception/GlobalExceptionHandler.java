@@ -13,28 +13,28 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErroResponse> tratarRecursoNaoEncontrado(
             RecursoNaoEncontradoException ex, WebRequest request) {
         return construirResposta(HttpStatus.NOT_FOUND, "Recurso não encontrado",
-                "O recurso solicitado não foi encontrado.", request);
+                "O recurso solicitado não foi encontrado.");
     }
 
     @ExceptionHandler(RecursoDuplicadoException.class)
     public ResponseEntity<ErroResponse> tratarRecursoDuplicado(
             RecursoDuplicadoException ex, WebRequest request) {
         return construirResposta(HttpStatus.CONFLICT, "Recurso duplicado",
-                "Já existe um registro com esses dados.", request);
+                "Já existe um registro com esses dados.");
     }
 
     @ExceptionHandler(RequisicaoInvalidaException.class)
     public ResponseEntity<ErroResponse> tratarRequisicaoInvalida(
             RequisicaoInvalidaException ex, WebRequest request) {
         return construirResposta(HttpStatus.BAD_REQUEST, "Requisição inválida",
-                "Os dados enviados são inválidos.", request);
+                "Os dados enviados são inválidos.");
     }
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErroResponse> tratarErroGenerico(
             Exception ex, WebRequest request) {
         return construirResposta(HttpStatus.INTERNAL_SERVER_ERROR, "Erro interno no servidor",
-                "Ocorreu um erro inesperado. Tente novamente mais tarde.", request);
+                "Ocorreu um erro inesperado. Tente novamente mais tarde.");
     }
 
     private ResponseEntity<ErroResponse> construirResposta(
