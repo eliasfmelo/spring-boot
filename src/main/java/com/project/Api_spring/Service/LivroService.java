@@ -19,7 +19,7 @@ public class LivroService {
 
     public Livro buscarPorId(Long id) {
         return livroRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Livro não encontrado"));
+                 .orElseThrow(RecursoNaoEncontradoException::new);
     }
 
     public Livro salvar(Livro livro) {
