@@ -19,7 +19,7 @@ public class AtendenteService {
 
     public Atendente buscarPorId(Long id) {
         return atendenteRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Atendente não encontrado"));
+                 .orElseThrow(RecursoNaoEncontradoException::new);
     }
 
     public Atendente salvar(Atendente atendente) {
