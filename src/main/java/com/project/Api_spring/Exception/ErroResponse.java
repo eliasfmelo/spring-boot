@@ -13,7 +13,7 @@ public class ErroResponse {
     private String mensagem;
  
 
-    public ErroResponse(int status , String erro , String mensagem, String caminho){
+    public ErroResponse(int status , String erro , String mensagem){
         this.timestamp = LocalDateTime.now();
         this.status = status;
         this.erro = erro;
