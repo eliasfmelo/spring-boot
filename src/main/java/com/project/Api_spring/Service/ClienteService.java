@@ -19,7 +19,7 @@ public class ClienteService {
 
     public Cliente buscarPorId(Long id) {
         return clienteRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Cliente não encontrado"));
+                .orElseThrow(RecursoNaoEncontradoException::new);
     }
 
     public Cliente salvar(Cliente cliente) {
