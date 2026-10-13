@@ -2,7 +2,9 @@
 
 API REST desenvolvida com Spring Boot para gerenciamento de acervo literário e administração de usuários de uma biblioteca.
 
+
 ## 🚀 Sobre o Projeto
+
 
 Este projeto foi desenvolvido com o objetivo de aplicar conceitos de desenvolvimento de APIs REST, arquitetura em camadas e integração com banco de dados relacional utilizando Spring Data JPA.
 
