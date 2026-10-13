@@ -72,6 +72,7 @@ A aplicação roda localmente na porta padrão do Spring Boot e expõe os recurs
 
 ## 🔄 Métodos HTTP e Operações (CRUD)
 
+
 | Método HTTP | Operação | Uso na API                                  |
 | ----------- | -------- | ------------------------------------------- |
 | `GET`       | Read     | Consultar um registro ou listar todos       |
@@ -82,6 +83,7 @@ A aplicação roda localmente na porta padrão do Spring Boot e expõe os recurs
 
 ## 📡 Códigos de Status HTTP
 
+
 | Código | Significado           | Quando ocorre                                   |
 | ------ | --------------------- | ----------------------------------------------- |
 | 400    | Bad Request           | Dados enviados são inválidos                    |
@@ -91,6 +93,7 @@ A aplicação roda localmente na porta padrão do Spring Boot e expõe os recurs
 
 
 # 🗃️ Modelo de Domínio
+
 
 | Entidade  | Tabela       | Atributos                                         | Restrições                                              |
 | --------- | ------------ | ------------------------------------------------- | ------------------------------------------------------- |
