@@ -5,7 +5,7 @@ public enum Genero {
     AUTOAJUDA,
     AVENTURA,
     BIOGRAFIA,
-    CLASSSICO,
+    CLASSICO,
     COMEDIA,
     DISTOPIA,
     DRAMA,
